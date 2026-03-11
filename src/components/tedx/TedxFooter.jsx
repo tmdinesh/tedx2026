@@ -1,6 +1,7 @@
 import tedxConfig from '../../tedxConfig';
 import techLogo from '../../assets/logo/tech_logo.png';
 import TedxLogo from './TedxLogo';
+import { Link } from 'react-router-dom';
 
 export default function TedxFooter() {
     return (
@@ -39,11 +40,17 @@ export default function TedxFooter() {
                             href="https://psgtech.edu"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1 mt-3 text-sm font-semibold transition-colors"
+                            className="inline-flex items-center gap-1 mt-3 text-sm font-semibold transition-colors mb-2"
                             style={{ color: 'var(--ted-red)' }}
                         >
                             🌐 psgtech.edu
                         </a>
+                        <Link to="/archive" className="block text-sm text-white/50 hover:text-white transition-colors mt-2">
+                            View Past Events (Archive)
+                        </Link>
+                        <Link to="/login" className="block text-sm text-white/50 hover:text-white transition-colors mt-2">
+                            Admin Access
+                        </Link>
                     </div>
 
 
