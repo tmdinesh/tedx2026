@@ -42,11 +42,16 @@ export default function TedxNavbar() {
                         <div className="flex items-center gap-3">
                             <TedxLogo size="sm" />
                             <div className="w-px h-8 sm:h-12 bg-white/20" />
-                            <img
-                                src={techLogo}
-                                alt="PSG Tech"
-                                className="h-10 sm:h-16 w-auto bg-white rounded-lg p-1 shadow-lg"
-                            />
+                            <div className="flex items-center gap-3">
+                                <img
+                                    src={techLogo}
+                                    alt="PSG Tech"
+                                    className="h-10 sm:h-16 w-auto bg-white rounded-lg p-1 shadow-lg"
+                                />
+                                <span className="hidden sm:block text-white font-semibold text-sm xl:text-lg whitespace-nowrap">
+                                    PSG College of Technology
+                                </span>
+                            </div>
                         </div>
                     </button>
 
