@@ -52,16 +52,18 @@ function SpeakerCard({ speaker, index }) {
             <p className="text-sm text-white/40 font-medium mb-5">{speaker.title}</p>
 
             {/* Talk topic */}
-            <div
-                className="rounded-xl px-4 py-4 mb-5 transition-all duration-300 group-hover:shadow-lg"
-                style={{
-                    background: 'linear-gradient(135deg, rgba(230,43,30,0.08) 0%, rgba(230,43,30,0.03) 100%)',
-                    border: '1px solid rgba(230,43,30,0.12)',
-                }}
-            >
-                <p className="text-[10px] uppercase tracking-[0.2em] text-white/25 mb-1.5 font-semibold">Talk</p>
-                <p className="text-sm font-semibold text-white/85 leading-snug">"{speaker.topic}"</p>
-            </div>
+            {speaker.topic && (
+                <div
+                    className="rounded-xl px-4 py-4 mb-5 transition-all duration-300 group-hover:shadow-lg"
+                    style={{
+                        background: 'linear-gradient(135deg, rgba(230,43,30,0.08) 0%, rgba(230,43,30,0.03) 100%)',
+                        border: '1px solid rgba(230,43,30,0.12)',
+                    }}
+                >
+                    <p className="text-[10px] uppercase tracking-[0.2em] text-white/25 mb-1.5 font-semibold">Talk</p>
+                    <p className="text-sm font-semibold text-white/85 leading-snug">"{speaker.topic}"</p>
+                </div>
+            )}
 
             {/* Bio */}
             <p className="text-sm text-white/35 leading-relaxed group-hover:text-white/50 transition-colors duration-300">
