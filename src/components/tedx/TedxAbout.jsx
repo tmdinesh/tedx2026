@@ -141,7 +141,7 @@ export default function TedxAbout() {
                     {[
                         { value: tedxConfig.speakers.length, label: 'Speakers' },
                         { value: '1', label: 'Inspiring Day' },
-                        { value: '500+', label: 'Attendees' },
+                        { value: '100+', label: 'Attendees' },
                         { value: '∞', label: 'Ideas' },
                     ].map((stat) => (
                         <div
