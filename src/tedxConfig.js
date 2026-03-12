@@ -23,8 +23,22 @@ const tedxConfig = {
   // Replace this array each year. Images can be URLs or local imports.
   speakers: [
     {
-      name: 'Mr. Sakethraman',
-      title: 'Vocalist, Tunesmith, Composer, Philanthropist, Music Educator',
+      name: 'Ms. Anuja Chandramouli',
+      title: 'Author, Winner of Times of India Popular Choice Author award 2021',
+      topic: '',
+      image: null,
+      bio: '',
+    },
+        {
+      name: 'Mr. Shah Mohammed',
+      title: 'Founder, D-Cube Designs, Author',
+      topic: '',
+      image: null,
+      bio: '',
+    },
+    {
+      name: 'Ms. Dharshini Sampathkumar',
+      title: 'Content Creator, Entrepreneur, Writer',
       topic: '',
       image: null,
       bio: '',
@@ -37,22 +51,8 @@ const tedxConfig = {
       bio: '',
     },
     {
-      name: 'Ms. Anuja Chandramouli',
-      title: 'Author, Winner of Times of India Popular Choice Author award 2021',
-      topic: '',
-      image: null,
-      bio: '',
-    },
-    {
-      name: 'Mr. Shah Mohammed',
-      title: 'Founder, D-Cube Designs, Author',
-      topic: '',
-      image: null,
-      bio: '',
-    },
-    {
-      name: 'Ms. Dharshini Sampathkumar',
-      title: 'Content Creator, Entrepreneur, Writer',
+      name: 'Mr. Sakethraman',
+      title: 'Vocalist, Tunesmith, Composer, Philanthropist, Music Educator',
       topic: '',
       image: null,
       bio: '',
