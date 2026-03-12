@@ -3,10 +3,19 @@ import { useTedxReveal, staggerDelay } from '../../hooks/useTedxReveal';
 
 function SpeakerCard({ speaker, index }) {
     const [ref, isRevealed] = useTedxReveal({ threshold: 0.1 });
+    
+    // 1. Define common salutations to ignore (lowercase for comparison)
+    const salutations = new Set([
+        'mr', 'mr.', 'ms', 'ms.', 'mrs', 'mrs.', 'dr', 'dr.', 'prof', 'prof.', 'er', 'er.', 'adv', 'adv.', 'ca', 'ca.'
+    ]);
+
+    // 2. Filter out the salutations before mapping the initials
     const initials = speaker.name
         .split(' ')
+        .filter((w) => !salutations.has(w.toLowerCase())) // Remove salutations
         .map((w) => w[0])
         .join('')
+        .toUpperCase() // Ensure it's capitalized
         .slice(0, 2);
 
     return (
