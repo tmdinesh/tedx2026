@@ -153,7 +153,7 @@ export default function TedxHero() {
                 {/* CTA */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12">
                     <a
-                        href="https://linktr.ee/ylgcmun2026"
+                        href="https://events.psginstitutions.in/EMS/register/6ABCD31A131"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="w-full sm:w-auto text-center px-10 py-4 rounded-full font-bold text-white text-base md:text-lg transition-all duration-300 hover:scale-105 tedx-glow-pulse"
