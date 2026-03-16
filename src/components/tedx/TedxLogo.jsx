@@ -5,14 +5,14 @@ export default function TedxLogo({
     showEventName = true,
 }) {
     const textColor = variant === 'light' ? '#ffffff' : '#1a1a1a';
-    const redColor = '#e62b1e';
+    const redColor = '#c1392b';
 
     const sizeMap = {
-        sm:   { tedSize: 'clamp(1rem, 2vw, 1.25rem)',     xRatio: 0.58, lift: '0.28em', gap: '0.06em' },
-        md:   { tedSize: 'clamp(1.25rem, 3vw, 1.75rem)',  xRatio: 0.58, lift: '0.28em', gap: '0.06em' },
-        lg:   { tedSize: 'clamp(1.75rem, 4vw, 2.5rem)',   xRatio: 0.58, lift: '0.28em', gap: '0.06em' },
-        xl:   { tedSize: 'clamp(2.25rem, 6vw, 3.5rem)',   xRatio: 0.58, lift: '0.30em', gap: '0.07em' },
-        hero: { tedSize: 'clamp(3rem, 10vw, 6rem)',        xRatio: 0.58, lift: '0.30em', gap: '0.07em' },
+        sm:   { tedSize: 'clamp(1rem, 2vw, 1.25rem)' },
+        md:   { tedSize: 'clamp(1.25rem, 3vw, 1.75rem)' },
+        lg:   { tedSize: 'clamp(1.75rem, 4vw, 2.5rem)' },
+        xl:   { tedSize: 'clamp(2.25rem, 6vw, 3.5rem)' },
+        hero: { tedSize: 'clamp(3rem, 10vw, 6rem)' },
     };
 
     const s = sizeMap[size] || sizeMap.md;
@@ -26,36 +26,35 @@ export default function TedxLogo({
             }}
             aria-label={`TEDx${showEventName ? 'PSGTech' : ''}`}
         >
-            {/* TED — bold, main size */}
+            {/* TED — bold, red */}
             <span
                 style={{
                     color: redColor,
                     fontSize: s.tedSize,
                     fontWeight: 900,
-                    letterSpacing: '-0.03em',
+                    letterSpacing: '-0.02em',
                     lineHeight: 1,
                 }}
             >
                 TED
             </span>
 
-            {/* x — superscript raised, slightly smaller */}
+            {/* x — same baseline, just smaller */}
             <span
                 style={{
                     color: redColor,
-                    fontSize: `calc(${s.tedSize} * ${s.xRatio})`,
+                    fontSize: `calc(${s.tedSize} * 0.6)`,
                     fontWeight: 900,
-                    position: 'relative',
-                    bottom: s.lift,
-                    marginLeft: '0.01em',
-                    marginRight: s.gap,
+                    letterSpacing: '0',
                     lineHeight: 1,
+                    alignSelf: 'flex-end',
+                    marginBottom: '0.08em',
                 }}
             >
                 x
             </span>
 
-            {/* PSGTech — light weight, matches TED size */}
+            {/* PSGTech — light weight, white */}
             {showEventName && (
                 <span
                     style={{
