@@ -5,7 +5,7 @@ export default function TEDxPSGTechLogo() {
         display: "inline-flex",
         alignItems: "baseline",
         fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-        background: "#fff",
+        background: "transparent",
         padding: "24px 32px",
       }}
     >
@@ -38,12 +38,12 @@ export default function TEDxPSGTechLogo() {
         x
       </span>
 
-      {/* PSGTech — light weight, black, rounded */}
+      {/* PSGTech — white */}
       <span
         style={{
           fontSize: "96px",
           fontWeight: 300,
-          color: "#ffffff",
+          color: "#FFFFFF",
           letterSpacing: "-1px",
           lineHeight: 1,
           fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
