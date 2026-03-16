@@ -83,7 +83,7 @@ export default function TedxNavbar() {
                             />
                         </Link>
                         <a
-                            href="https://linktr.ee/ylgcmun2026"
+                            href="https://events.psginstitutions.in/EMS/register/6ABCD31A131"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="ml-4 px-6 py-2.5 text-sm font-bold rounded-full transition-all duration-300 hover:scale-105"
