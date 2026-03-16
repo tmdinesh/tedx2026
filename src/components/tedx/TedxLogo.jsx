@@ -19,7 +19,7 @@ export default function TedxLogo({
 
     return (
         <span
-            className={`inline-flex items-baseline select-none ${className}`}
+            className={`inline-flex items-stretch select-none ${className}`}
             style={{
                 fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
                 lineHeight: 1,
@@ -34,27 +34,27 @@ export default function TedxLogo({
                     fontWeight: 900,
                     letterSpacing: '-0.02em',
                     lineHeight: 1,
+                    alignSelf: 'flex-end',
                 }}
             >
                 TED
             </span>
 
-            {/* x — same baseline, just smaller */}
+            {/* x — top-right superscript position */}
             <span
                 style={{
                     color: redColor,
-                    fontSize: `calc(${s.tedSize} * 0.6)`,
+                    fontSize: `calc(${s.tedSize} * 0.55)`,
                     fontWeight: 900,
-                    letterSpacing: '0',
                     lineHeight: 1,
-                    alignSelf: 'flex-end',
-                    marginBottom: '0.08em',
+                    alignSelf: 'flex-start',
+                    marginTop: '0.05em',
                 }}
             >
                 x
             </span>
 
-            {/* PSGTech — light weight, white */}
+            {/* PSGTech — light weight */}
             {showEventName && (
                 <span
                     style={{
@@ -63,6 +63,7 @@ export default function TedxLogo({
                         fontWeight: 300,
                         letterSpacing: '-0.01em',
                         lineHeight: 1,
+                        alignSelf: 'flex-end',
                     }}
                 >
                     PSGTech
