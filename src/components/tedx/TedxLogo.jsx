@@ -1,45 +1,56 @@
-/**
- * TEDx Logo Component
- *
- * Adjusted to match the provided image exactly:
- * - "TED" and "x" are both in red
- * - Helvetica Bold/Black typeface (weight 900)
- * - Top-aligned "x" with scaled-down font size
- *
- * Props:
- * size: 'sm' | 'md' | 'lg' | 'xl' | 'hero'
- * className: additional classes
- */
-export default function TedxLogo({
-    size = 'md',
-    className = '',
-}) {
-    const redColor = '#e62b1e';
+export default function TEDxPSGTechLogo() {
+  return (
+    <div
+      style={{
+        display: "inline-flex",
+        alignItems: "baseline",
+        fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+        background: "#fff",
+        padding: "24px 32px",
+      }}
+    >
+      {/* TED */}
+      <span
+        style={{
+          fontSize: "96px",
+          fontWeight: 900,
+          color: "#E62B1E",
+          letterSpacing: "-3px",
+          lineHeight: 1,
+        }}
+      >
+        TED
+      </span>
 
-    const sizeMap = {
-        sm: { fontSize: 'clamp(1rem, 2vw, 1.25rem)', tracking: '-0.02em' },
-        md: { fontSize: 'clamp(1.25rem, 3vw, 1.75rem)', tracking: '-0.02em' },
-        lg: { fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', tracking: '-0.02em' },
-        xl: { fontSize: 'clamp(2.25rem, 6vw, 3.5rem)', tracking: '-0.03em' },
-        hero: { fontSize: 'clamp(3rem, 10vw, 6rem)', tracking: '-0.03em' },
-    };
+      {/* x — raised superscript */}
+      <span
+        style={{
+          fontSize: "52px",
+          fontWeight: 900,
+          color: "#E62B1E",
+          position: "relative",
+          top: "-26px",
+          marginLeft: "2px",
+          marginRight: "10px",
+          lineHeight: 1,
+        }}
+      >
+        x
+      </span>
 
-    const s = sizeMap[size] || sizeMap.md;
-
-    return (
-        <span
-            className={`inline-flex items-start select-none ${className}`}
-            style={{
-                fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-                fontWeight: 900,
-                fontSize: s.fontSize,
-                letterSpacing: s.tracking,
-                lineHeight: 1,
-            }}
-            aria-label="TEDx"
-        >
-            <span style={{ color: redColor }}>TED</span>
-            <span style={{ color: redColor, fontSize: '0.73em' }}>x</span>
-        </span>
-    );
+      {/* PSGTech — light weight, black, rounded */}
+      <span
+        style={{
+          fontSize: "96px",
+          fontWeight: 300,
+          color: "#ffffff",
+          letterSpacing: "-1px",
+          lineHeight: 1,
+          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+        }}
+      >
+        PSGTech
+      </span>
+    </div>
+  );
 }
