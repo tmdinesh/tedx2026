@@ -1,25 +1,19 @@
 /**
- * TEDxPSGTech Logo Component
+ * TEDx Logo Component
  *
- * Follows official TEDx brand guidelines:
- * - "TED" in white (or black on light bg), "x" in red, "PSGTech" in white
- * - Helvetica Bold typeface
- * - Must appear on solid background (black or white)
- * - No decorative overlays on the logo itself
+ * Adjusted to match the provided image exactly:
+ * - "TED" and "x" are both in red
+ * - Helvetica Bold/Black typeface (weight 900)
+ * - Top-aligned "x" with scaled-down font size
  *
  * Props:
- *   variant: 'light' (white text for dark bg) | 'dark' (black text for light bg)
- *   size: 'sm' | 'md' | 'lg' | 'xl' | 'hero'
- *   className: additional classes
- *   showEventName: whether to show "PSGTech" (default true)
+ * size: 'sm' | 'md' | 'lg' | 'xl' | 'hero'
+ * className: additional classes
  */
 export default function TedxLogo({
-    variant = 'light',
     size = 'md',
     className = '',
-    showEventName = true,
 }) {
-    const textColor = variant === 'light' ? '#ffffff' : '#1a1a1a';
     const redColor = '#e62b1e';
 
     const sizeMap = {
@@ -34,21 +28,18 @@ export default function TedxLogo({
 
     return (
         <span
-            className={`inline-flex items-baseline select-none ${className}`}
+            className={`inline-flex items-start select-none ${className}`}
             style={{
                 fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
-                fontWeight: 700,
+                fontWeight: 900,
                 fontSize: s.fontSize,
                 letterSpacing: s.tracking,
                 lineHeight: 1,
             }}
-            aria-label={`TEDx${showEventName ? 'PSGTech' : ''}`}
+            aria-label="TEDx"
         >
-            <span style={{ color: textColor }}>TED</span>
-            <span style={{ color: redColor }}>x</span>
-            {showEventName && (
-                <span style={{ color: textColor }}>PSGTech</span>
-            )}
+            <span style={{ color: redColor }}>TED</span>
+            <span style={{ color: redColor, fontSize: '0.73em' }}>x</span>
         </span>
     );
 }
