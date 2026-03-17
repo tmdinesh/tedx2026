@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build output
+dist
+
+# Git
+.git
+.gitignore
+
+# IDE and OS
+.vscode
+.idea
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Logs and temp
+*.log
+npm-debug.log*
+.npm
+.temp
+.tmp
+
+# Environment (use build args or secrets instead)
+.env
+.env.*
+!.env.example
+
+# Documentation and misc
+README.md
+*.md
+Dockerfile*
+.dockerignore
+docker-compose*
+
+# Tests
+coverage
+.nyc_output
+*.test.*
+*.spec.*
+__tests__
+__mocks__
