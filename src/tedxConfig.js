@@ -26,52 +26,63 @@ const tedxConfig = {
       name: 'Ms. Anuja Chandramouli',
       title: 'Author, Winner of Times of India Popular Choice Author award 2021',
       topic: '',
-      image: null,
+      image: '/speakers/anuja.png',
       bio: '',
     },
         {
       name: 'Mr. Shah Mohammed',
       title: 'Founder, D-Cube Designs, Author',
       topic: '',
-      image: null,
+      image: '/speakers/shah.png',
       bio: '',
     },
     {
       name: 'Ms. Dharshini Sampathkumar',
       title: 'Content Creator, Entrepreneur, Writer',
       topic: '',
-      image: null,
+      image: '/speakers/dharshini.png',
       bio: '',
     },
     {
       name: 'Mr. Sentil Raja Sennimalai',
       title: 'Founder and CEO, Namma Office',
       topic: '',
-      image: null,
+      image: '/speakers/sentil.png',
       bio: '',
     },
     {
-      name: 'Mr. Sakethraman',
+      name: 'Mr. Vidwan Saketharaman',
       title: 'Vocalist, Tunesmith, Composer, Philanthropist, Music Educator',
       topic: '',
-      image: null,
+      image: '/speakers/saketharaman.png',
       bio: '',
     },
   ],
 
   // ── Schedule ───────────────────────────────────────────────────
   schedule: [
-    { time: '09:00 AM', title: 'Registration & Refreshments', type: 'break' },
-    { time: '09:30 AM', title: 'Opening Ceremony', type: 'ceremony' },
-    { time: '10:00 AM', title: 'Mr. Sakethraman', subtitle: '', type: 'talk' },
-    { time: '10:45 AM', title: 'Mr. Sentil Raja Sennimalai', subtitle: '', type: 'talk' },
-    { time: '11:30 AM', title: 'Networking Break', type: 'break' },
-    { time: '12:00 PM', title: 'Ms. Anuja Chandramouli', subtitle: '', type: 'talk' },
-    { time: '01:00 PM', title: 'Lunch Break', type: 'break' },
-    { time: '02:00 PM', title: 'Mr. Shah Mohammed', subtitle: '', type: 'talk' },
-    { time: '02:45 PM', title: 'Ms. Dharshini Sampathkumar', subtitle: '', type: 'talk' },
-    { time: '03:30 PM', title: 'Refreshments & Networking', type: 'break' },
-    { time: '04:00 PM', title: 'Closing Ceremony & Certificate Distribution', type: 'ceremony' },
+    { time: '09:30 AM', title: 'Prayer', type: 'ceremony' },
+    { time: '09:32 AM', title: 'Welcome', type: 'ceremony' },
+    { time: '09:35 AM', title: 'Briefing of Theme', type: 'ceremony' },
+    { time: '09:40 AM', title: 'Presidential Address', type: 'ceremony' },
+    { time: '09:45 AM', title: 'Felicitation', type: 'ceremony' },
+    { time: '09:50 AM', title: 'Felicitation of GLF', type: 'ceremony' },
+  
+    { time: '10:00 AM', title: 'Ms. Anuja Chandramouli', subtitle: '', type: 'talk' },
+    { time: '10:30 AM', title: 'Break', type: 'break' },
+  
+    { time: '11:00 AM', title: 'Mr. Shah Mohammed', subtitle: '', type: 'talk' },
+    { time: '11:30 AM', title: 'Mr. Senthil Raja Sennimalai', subtitle: '', type: 'talk' },
+  
+    { time: '12:15 PM', title: 'Lunch Break', type: 'break' },
+  
+    { time: '01:45 PM', title: 'Ms. Dharshini Sampathkumar', subtitle: '', type: 'talk' },
+    { time: '02:15 PM', title: 'Mr. Sakethraman', subtitle: '', type: 'talk' },
+  
+    { time: '02:45 PM', title: 'TEK Music', type: 'break' },
+  
+    { time: '03:15 PM', title: 'Closing Ceremony', type: 'ceremony' },
+    { time: '03:30 PM', title: 'National Anthem', type: 'ceremony' },
   ],
 
   // ── Branding ───────────────────────────────────────────────────
